@@ -1,6 +1,11 @@
 @charset "utf-8";
 /* CSS Document */
 /* ===== LAYOUT ===== */
+html {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
 body, #maincontent, #filter {
   display: flex;
   flex-direction: column;
@@ -89,12 +94,11 @@ nav h1 a {
   text-transform: uppercase;
 }
 #breadcrumb {
-    padding: 10px 40px 16px;
+    padding: 10px 0 10px 16px;
     list-style: none;
     background-color: #eee;
     font-size: 17px;
     margin: 0;
-    width: 100%;
 }
 
 /* Display list items side by side */
@@ -175,8 +179,7 @@ nav h1 a {
   display: block;
   margin: 0;
   max-width: 100%;
-  min-height: 248px;
-  min-width: 100%;
+  min-width: 10%;
 }
 #restaurants-list li h1 {
   color: #f18200;
@@ -207,23 +210,18 @@ nav h1 a {
 
 /* ====================== Restaurant Details ====================== */
 .inside header {
-  position: fixed;
-  top: 0;
   width: 100%;
   z-index: 1000;
 }
 .inside #map-container {
   background: blue none repeat scroll 0 0;
+  height: 10%;
 }
 .inside #map {
   background-color: #ccc;
   width: 100%;
 }
-.inside #footer {
-  bottom: 0;
-  position: absolute;
-  width: 100%;
-}
+
 #restaurant-name {
   color: #f18200;
   font-family: Arial,sans-serif;
@@ -257,7 +255,7 @@ nav h1 a {
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
   padding: 140px 40px 30px;
-  width: 50%;
+  width: 100%;
 }
 #reviews-container {
   padding: 30px 40px 80px;
